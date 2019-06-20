@@ -31,7 +31,7 @@
 <img src="media/TianocoreTitlePageLogo.jpg" width="300" />
 
 
-# Understanding the UEFI Secure Boot Chain {#understanding-uefi-secure-boot-chain}
+### Understanding the UEFI Secure Boot Chain {#understanding-uefi-secure-boot-chain}
 <!---
 ### {{ book.title }}
 -->

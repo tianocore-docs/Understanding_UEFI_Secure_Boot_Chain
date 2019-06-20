@@ -30,7 +30,7 @@
 -->
 # _References_ {#references}
 
-### Books and Papers {#books-and-papers}
+## Books and Papers {#books-and-papers}
 
 [Amoroso] Amoroso, Edward. Fundamentals of Computer Security Technology. Prentice Hall, 1994
 
@@ -58,7 +58,7 @@
 
 [Welch] Welch, Ian and Stroud, Robert. Supporting Real World Security Models in Java, 7<sup>th</sup> IEEE Workshop on Future Trends of Distributed Computing Systems, FTDCS&#039;99\. Cape Town, South Africa, December 20-22, 1999.
 
-### Web {#web}
+## Web {#web}
 
 [AndroidVerifiedBoot] Android Verified Boot, [https://source.android.com/security/verifiedboot](https://source.android.com/security/verifiedboot)
 

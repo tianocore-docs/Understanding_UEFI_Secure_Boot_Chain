@@ -32,7 +32,7 @@
 
 System firmware, commonly referred to as Basic Input Output System (BIOS), plays an important role in platform security. Running unauthorized firmware components may introduce significant threats by creating a permanent denial of service or introducing persistent malware. In 2011, the National Institute of Standards and Technology ([NIST](https://www.nist.gov/)) published BIOS Protection Guidelines ([SP800-147](https://csrc.nist.gov/publications/detail/sp/800-147/final)). NIST extended the scope to all platform firmware and published Platform Firmware Resiliency Guidelines ([SP800-193](https://csrc.nist.gov/publications/detail/sp/800-193/final)) in 2018\. The goal of those documents is to provide a general guideline for firmware integrity.
 
-### Integrity Models {#integrity-models}
+## Integrity Models {#integrity-models}
 
 The UEFI Secure Boot chain can be applied to the [Clark-Wilson integrity policy](http://theory.stanford.edu/~ninghui/courses/Fall03/papers/clark_wilson.pdf), developed in 1987\. The Clark Wilson model includes the following concepts:
 
@@ -89,7 +89,7 @@ Table 1-1: Clark-Wilson model
 
 Because the Clark-Wilson focuses on duty and transaction, it is more applicable to business and industry processes. Currently, some papers describe how to apply the Clark-Wilson integrity model to the existing system, such as [Windows](https://www.giac.org/paper/gsec/835/clark-wilson-security-model/101747), [Java](https://docplayer.net/36680206-Supporting-real-world-security-models-in-java.html) or [Trusted Computing Group (TCG) security](https://www.semanticscholar.org/paper/A-Comparison-of-the-trusted-Computing-Group-Model-Smith/fa82426d99b86d1040f80b8bd8e0ac4f785b29a6).
 
-### Introduction to the Secure Boot Chain {#introduction-to-the-secure-boot-chain}
+## Introduction to the Secure Boot Chain {#introduction-to-the-secure-boot-chain}
 
 According to NIST SP800-147 and SP800-193, the system needs to maintain integrity and availability during the firmware boot process. In firmware, secure boot (aka verified boot) uses a set of policy objects to verify the next entity before execution. For example, to match C5, the system uses the TP (verification procedure) to verify the UDI (untrusted firmware component), transforms the UDI into a CDI (trusted firmware component), and executes it.
 
@@ -104,7 +104,7 @@ Table 1-2: Clark-Wilson model in Firmware
 | **Auditing** | The ability to ascertain the changes made to CDIs and ensure that the system is in a valid state. | C1, C4 | Yes, if TCG trusted boot is enabled. TCG event log may record such information. |
 | **Accountability** | The ability to uniquely associate users with their actions. | E3. | No. There is no user concept in secure boot. |
 
-### Patterns in the Secure Boot Chain {#patterns-in-the-secure-boot-chain}
+## Patterns in the Secure Boot Chain {#patterns-in-the-secure-boot-chain}
 
 Definition:
 
@@ -146,7 +146,7 @@ There are two types of verification:
 
 2.  The verifier for communication (verified communication). The read/write data are in this category. This category is for cross-boundary data passing such as SMM communication, including the UEFI non-volatile variable. In most cases, the verification is based upon the boundary check, valid range check, etc. Above 5.e belongs to this type.
 
-#### Patterns for Verified Boot {#patterns-for-verified-boot}
+### Patterns for Verified Boot {#patterns-for-verified-boot}
 
 Table 1-3: Patterns for Verified Boot
 
