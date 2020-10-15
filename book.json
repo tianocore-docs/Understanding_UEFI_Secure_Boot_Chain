@@ -4,6 +4,6 @@
     "version" : "Revision 01.0"
   },
 
-  "plugins": ["puml"],
+  "plugins": ["puml-aleung"],
   "pluginsConfig": {}
 }
