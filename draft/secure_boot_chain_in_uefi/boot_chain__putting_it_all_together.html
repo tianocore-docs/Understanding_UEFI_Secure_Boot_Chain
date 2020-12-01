@@ -1,0 +1,1027 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Boot Chain – Putting it all together · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="boot_chain__putting_it_all_together/signed-capsule-update.html" />
+    
+    
+    <link rel="prev" href="intel_boot_guard.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Understanding UEFI Secure Boot Chain
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../executive_summary.html">
+            
+                <a href="../executive_summary.html">
+            
+                    
+                    Executive Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../overview.html">
+            
+                <a href="../overview.html">
+            
+                    
+                    Overview
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../integrity-models.html">
+            
+                <a href="../integrity-models.html">
+            
+                    
+                    Integrity Models
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../introduction-to-the-secure-boot-chain.html">
+            
+                <a href="../introduction-to-the-secure-boot-chain.html">
+            
+                    
+                    Introduction to the Secure Boot Chain
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../patterns-in-the-secure-boot-chain.html">
+            
+                <a href="../patterns-in-the-secure-boot-chain.html">
+            
+                    
+                    Patterns in the Secure Boot Chain
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../comparing-clark-wilson-and-uefi-secure-boot.html">
+            
+                <a href="../comparing-clark-wilson-and-uefi-secure-boot.html">
+            
+                    
+                    Comparing Clark-Wilson and UEFI Secure Boot
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Secure Boot Chain in UEFI
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="uefi_secure_boot.html">
+            
+                <a href="uefi_secure_boot.html">
+            
+                    
+                    UEFI Secure Boot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="intel_boot_guard.html">
+            
+                <a href="intel_boot_guard.html">
+            
+                    
+                    Intel® Boot Guard
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.3" data-path="boot_chain__putting_it_all_together.html">
+            
+                <a href="boot_chain__putting_it_all_together.html">
+            
+                    
+                    Boot Chain – Putting it all together
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="boot_chain__putting_it_all_together/signed-capsule-update.html">
+            
+                <a href="boot_chain__putting_it_all_together/signed-capsule-update.html">
+            
+                    
+                    Signed Capsule Update
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="signed_recovery.html">
+            
+                <a href="signed_recovery.html">
+            
+                    
+                    Signed Recovery
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="s3_resume.html">
+            
+                <a href="s3_resume.html">
+            
+                    
+                    S3 Resume
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="smm_runtime_communication.html">
+            
+                <a href="smm_runtime_communication.html">
+            
+                    
+                    SMM Runtime Communication
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../additional_secure_boot_chain_implementations/">
+            
+                <a href="../additional_secure_boot_chain_implementations/">
+            
+                    
+                    Additional Secure Boot Chain Implementations
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../additional_secure_boot_chain_implementations/machine_owner_key_mok.html">
+            
+                <a href="../additional_secure_boot_chain_implementations/machine_owner_key_mok.html">
+            
+                    
+                    Machine Owner Key (MOK)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../additional_secure_boot_chain_implementations/coreboot.html">
+            
+                <a href="../additional_secure_boot_chain_implementations/coreboot.html">
+            
+                    
+                    coreboot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../additional_secure_boot_chain_implementations/android_verified_boot.html">
+            
+                <a href="../additional_secure_boot_chain_implementations/android_verified_boot.html">
+            
+                    
+                    Android Verified Boot
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../looking_forward__platform_firmware_resiliency/">
+            
+                <a href="../looking_forward__platform_firmware_resiliency/">
+            
+                    
+                    Looking Forward – Platform Firmware Resiliency
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../looking_forward__platform_firmware_resiliency/platform_firmware_resiliency.html">
+            
+                <a href="../looking_forward__platform_firmware_resiliency/platform_firmware_resiliency.html">
+            
+                    
+                    Platform Firmware Resiliency
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../looking_forward__platform_firmware_resiliency/device_firmware_boot.html">
+            
+                <a href="../looking_forward__platform_firmware_resiliency/device_firmware_boot.html">
+            
+                    
+                    Device Firmware Boot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../looking_forward__platform_firmware_resiliency/device_firmware_update.html">
+            
+                <a href="../looking_forward__platform_firmware_resiliency/device_firmware_update.html">
+            
+                    
+                    Device Firmware Update
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../looking_forward__platform_firmware_resiliency/project_cerberus.html">
+            
+                <a href="../looking_forward__platform_firmware_resiliency/project_cerberus.html">
+            
+                    
+                    Project Cerberus
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../looking_forward__platform_firmware_resiliency/intel_platform_firmware_resilience_intel_pfr.html">
+            
+                <a href="../looking_forward__platform_firmware_resiliency/intel_platform_firmware_resilience_intel_pfr.html">
+            
+                    
+                    Intel® Platform Firmware Resilience (Intel® PFR)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../looking_forward__platform_firmware_resiliency/google_titan.html">
+            
+                <a href="../looking_forward__platform_firmware_resiliency/google_titan.html">
+            
+                    
+                    Google Titan
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="../looking_forward__platform_firmware_resiliency/other_platform_firmware_resiliency_pfr_implementat.html">
+            
+                <a href="../looking_forward__platform_firmware_resiliency/other_platform_firmware_resiliency_pfr_implementat.html">
+            
+                    
+                    Other Platform Firmware Resiliency (PFR) Implementations
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../glossary.html">
+            
+                <a href="../glossary.html">
+            
+                    
+                    Glossary
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../references.html">
+            
+                <a href="../references.html">
+            
+                    
+                    References
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../references.html">
+            
+                <a href="../references.html#books-and-papers">
+            
+                    
+                    Books and Papers 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../references.html">
+            
+                <a href="../references.html#web">
+            
+                    
+                    Web
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" >
+            
+                <span>
+            
+                    
+                    Figures
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../integrity-models.html">
+            
+                <a href="../integrity-models.html#clark-wilson-model-from-lee">
+            
+                    
+                    Figure 1-1: Clark-Wilson model, From Lee
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="uefi_secure_boot.html">
+            
+                <a href="uefi_secure_boot.html#2-1-uefi-secure-boot">
+            
+                    
+                    Figure 2-1: UEFI Secure Boot 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="uefi_secure_boot.html">
+            
+                <a href="uefi_secure_boot.html#2-2-image-verification-flow">
+            
+                    
+                    Figure 2-2: Image Verification flow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="uefi_secure_boot.html">
+            
+                <a href="uefi_secure_boot.html#2-3-image-verification-with-timestamp-signature-database">
+            
+                    
+                    Figure 2-3: Image Verification with timestamp signature database
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="intel_boot_guard.html">
+            
+                <a href="intel_boot_guard.html#2-4-intel-boot-guard-diagram-credit-cyber-resiliency-in-chipset-and-bios">
+            
+                    
+                    Figure 2-4: Intel® Boot Guard diagram credit CYBER-RESILIENCY IN CHIPSET AND BIOS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.6" data-path="boot_chain__putting_it_all_together.html">
+            
+                <a href="boot_chain__putting_it_all_together.html#2-5-secure-boot-verification-flow">
+            
+                    
+                    Figure 2-5: Secure Boot Verification Flow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.7" data-path="boot_chain__putting_it_all_together/signed-capsule-update.html">
+            
+                <a href="boot_chain__putting_it_all_together/signed-capsule-update.html#2-6-intel-bios-guard">
+            
+                    
+                    Figure 2-6: Intel® BIOS Guard
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8" data-path="../additional_secure_boot_chain_implementations/machine_owner_key_mok.html">
+            
+                <a href="../additional_secure_boot_chain_implementations/machine_owner_key_mok.html#3-1-linux-mok-boot-source-uefi-secure-boot-webinar">
+            
+                    
+                    Figure 3-1: Linux MOK Boot, source: UEFI Secure Boot Webinar
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.9" data-path="../additional_secure_boot_chain_implementations/coreboot.html">
+            
+                <a href="../additional_secure_boot_chain_implementations/coreboot.html#3-2-coreboot-verified-boot-source-verified-boot-in-chrome-os-and-how-to-make-it-work-for-you">
+            
+                    
+                    Figure 3-2: coreboot Verified Boot 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.10" data-path="../additional_secure_boot_chain_implementations/android_verified_boot.html">
+            
+                <a href="../additional_secure_boot_chain_implementations/android_verified_boot.html#3-3-android-verified-boot-1-0-without-a-b-source-android-verified-boot-2-0">
+            
+                    
+                    Figure 3-3: Android Verified Boot 1.0 without A/B source: Android Verified Boot 2.0
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.11" data-path="../additional_secure_boot_chain_implementations/android_verified_boot.html">
+            
+                <a href="../additional_secure_boot_chain_implementations/android_verified_boot.html#3-4-android-verified-boot-1-0-with-a-b-source-android-verified-boot-2-0">
+            
+                    
+                    Figure 3-4: Android Verified Boot 1.0 with A/B source: Android Verified Boot 2.0
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.12" data-path="../additional_secure_boot_chain_implementations/android_verified_boot.html">
+            
+                <a href="../additional_secure_boot_chain_implementations/android_verified_boot.html#3-5-android-verified-boot-2-0-android-verified-boot-2-0">
+            
+                    
+                    Figure 3-5: Android Verified Boot 2.0 source: Android Verified Boot 2.0
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.13" data-path="../looking_forward__platform_firmware_resiliency/platform_firmware_resiliency.html">
+            
+                <a href="../looking_forward__platform_firmware_resiliency/platform_firmware_resiliency.html#4-1-component-and-trust-chain-from-nist-sp800-193">
+            
+                    
+                    Figure 4-1: Component and Trust Chain, from NIST SP800-193
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.14" data-path="../looking_forward__platform_firmware_resiliency/platform_firmware_resiliency.html">
+            
+                <a href="../looking_forward__platform_firmware_resiliency/platform_firmware_resiliency.html#4-2-high-level-view-of-pcie-component-authentication-source-pcie-component-authentication">
+            
+                    
+                    Figure 4-2: High-level View of PCIe® Component Authentication 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.15" data-path="../looking_forward__platform_firmware_resiliency/project_cerberus.html">
+            
+                <a href="../looking_forward__platform_firmware_resiliency/project_cerberus.html#4-3-cerberus-power-on-sequence-source-project-cerberus-hardware-security">
+            
+                    
+                    Figure 4-3: Cerberus power on sequence source: “Project Cerberus Hardware Security
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.16" data-path="../looking_forward__platform_firmware_resiliency/project_cerberus.html">
+            
+                <a href="../looking_forward__platform_firmware_resiliency/project_cerberus.html#4-4-cerberus-boot-flow-source-project-cerberus-hardware-security">
+            
+                    
+                    Figure 4-4: Cerberus boot flow source: “Project Cerberus Hardware Security"
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.17" data-path="../looking_forward__platform_firmware_resiliency/project_cerberus.html">
+            
+                <a href="../looking_forward__platform_firmware_resiliency/project_cerberus.html#4-5-cerberus-recovery-flow-source-project-cerberus-hardware-security">
+            
+                    
+                    Figure 4-5: Cerberus recovery flow source: “Project Cerberus Hardware Security"
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.18" data-path="../looking_forward__platform_firmware_resiliency/project_cerberus.html">
+            
+                <a href="../looking_forward__platform_firmware_resiliency/project_cerberus.html#4-6-cerberus-firmware-update-source-project-cerberus-hardware-security">
+            
+                    
+                    Figure 4-6: Cerberus firmware update source: “Project Cerberus Hardware Security"
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.19" data-path="../looking_forward__platform_firmware_resiliency/intel_platform_firmware_resilience_intel_pfr.html">
+            
+                <a href="../looking_forward__platform_firmware_resiliency/intel_platform_firmware_resilience_intel_pfr.html#4-7-intel-pfr-overview-source-csdn-net">
+            
+                    
+                    Figure 4-7: Intel® PFR Overview source: csdn.net
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.20" data-path="../looking_forward__platform_firmware_resiliency/intel_platform_firmware_resilience_intel_pfr.html">
+            
+                <a href="../looking_forward__platform_firmware_resiliency/intel_platform_firmware_resilience_intel_pfr.html#4-8-intel-pfr-boot-flow-source-csdn-net">
+            
+                    
+                    Figure 4-8: Intel® PFR boot flow source: csdn.net
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.21" data-path="../looking_forward__platform_firmware_resiliency/intel_platform_firmware_resilience_intel_pfr.html">
+            
+                <a href="../looking_forward__platform_firmware_resiliency/intel_platform_firmware_resilience_intel_pfr.html#4-9-intel-pfr-reset-sequence-source-csdn-net">
+            
+                    
+                    Figure 4-9: Intel® PFR Reset Sequence source: csdn.net
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.22" data-path="../looking_forward__platform_firmware_resiliency/google_titan.html">
+            
+                <a href="../looking_forward__platform_firmware_resiliency/google_titan.html#4-10-titan-system-integration">
+            
+                    
+                    Figure 4-10: Titan System Integration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.23" data-path="../looking_forward__platform_firmware_resiliency/google_titan.html">
+            
+                <a href="../looking_forward__platform_firmware_resiliency/google_titan.html#4-11-titan-verified-boot">
+            
+                    
+                    Figure 4-11: Titan Verified Boot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.24" data-path="../looking_forward__platform_firmware_resiliency/other_platform_firmware_resiliency_pfr_implementat.html">
+            
+                <a href="../looking_forward__platform_firmware_resiliency/other_platform_firmware_resiliency_pfr_implementat.html#4-12-lattice-pfr-source-latticesemi.com-pfr">
+            
+                    
+                    Figure 4-12: Lattice PFR source: latticesemi.com/pfr
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Boot Chain – Putting it all together</a>
+    </h1>
+</div>
+<div>
+    <!-- 
+    <img style="float:left; align:middle; height:2em" src="media/TianocoreTitlePageLogo.jpg"/>
+     -->
+    
+      <h2>
+        <div style="position:absolute;text-align:left">Understanding the UEFI Secure Boot Chain</div>
+        <div style="text-align:right">Revision 01.0</div>
+      </h2>  
+    
+    <hr>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <!--- @file
+  boot-chain-putting-it-all-together.md for Understanding the UEFI Secure Boot Chain
+
+  Copyright (c) 2019, Intel Corporation. All rights reserved.<BR>
+
+  Redistribution and use in source (original document form) and 'compiled'
+  forms (converted to PDF, epub, HTML and other formats) with or without
+  modification, are permitted provided that the following conditions are met:
+
+  1) Redistributions of source code (original document form) must retain the
+     above copyright notice, this list of conditions and the following
+     disclaimer as the first lines of this file unmodified.
+
+  2) Redistributions in compiled form (transformed to other DTDs, converted to
+     PDF, epub, HTML and other formats) must reproduce the above copyright
+     notice, this list of conditions and the following disclaimer in the
+     documentation and/or other materials provided with the distribution.
+
+  THIS DOCUMENTATION IS PROVIDED BY TIANOCORE PROJECT "AS IS" AND ANY EXPRESS OR
+  IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+  MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO
+  EVENT SHALL TIANOCORE PROJECT  BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+  PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;
+  OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+  WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+  OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION, EVEN IF
+  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+-->
+<h2 id="boot-chain-putting-it-all-together">Boot Chain &#x2013; Putting it all together </h2>
+<p>Figure 2-5 shows a complete secure boot chain constructed using Intel&#xAE; Boot Guard, OBB Verification, and UEFI Secure Boot.</p>
+<p><img src="../media/image6.png" alt=""></p>
+<h6 id="2-5-secure-boot-verification-flow">Figure 2-5: Secure Boot Verification Flow</h6>
+
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                    
+                    
+
+<div>
+    <hr>
+    
+      <h2>
+        <div style="position:absolute;text-align:left">Understanding the UEFI Secure Boot Chain</div>
+        <div style="text-align:right">Revision 01.0</div>
+      </h2>  
+    
+</div>
+
+
+
+                
+            </div>
+
+            
+                
+                <a href="intel_boot_guard.html" class="navigation navigation-prev " aria-label="Previous page: Intel® Boot Guard">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="boot_chain__putting_it_all_together/signed-capsule-update.html" class="navigation navigation-next " aria-label="Next page: Signed Capsule Update">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Boot Chain – Putting it all together","level":"1.4.3","depth":2,"next":{"title":"Signed Capsule Update","level":"1.4.4","depth":2,"path":"secure_boot_chain_in_uefi/boot_chain__putting_it_all_together/signed-capsule-update.md","ref":"secure_boot_chain_in_uefi/boot_chain__putting_it_all_together/signed-capsule-update.md","articles":[]},"previous":{"title":"Intel® Boot Guard","level":"1.4.2","depth":2,"path":"secure_boot_chain_in_uefi/intel_boot_guard.md","ref":"secure_boot_chain_in_uefi/intel_boot_guard.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{"title":"Understanding the UEFI Secure Boot Chain","version":"Revision 01.0"},"plugins":["puml-aleung"],"pluginsConfig":{"puml-aleung":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"secure_boot_chain_in_uefi/boot_chain__putting_it_all_together.md","mtime":"2020-12-01T06:51:01.808Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-12-01T06:51:39.354Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
