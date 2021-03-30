@@ -1,5 +1,6 @@
 {
   "variables" : {
+    "draft"   : "yes",
     "title"   : "Understanding the UEFI Secure Boot Chain",
     "version" : "Revision 01.0"
   },
